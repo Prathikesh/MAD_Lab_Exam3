@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="custom_color_primary">#1F4F82</color>
+    <color name="custom_color_secondary">#A9D2F3</color>
+    <color name="custom_color_secondary_light">#D0E7F9</color>
+    <color name="custom_color_background">#F0F8FF</color>
+    <color name="custom_color_text_primary">#0A1F44</color>
+    <color name="custom_color_text_secondary">#1F4F82</color>
+    <color name="light_grey">#E0EAF3</color>
+    <color name="small_cards_color">#BFD9ED</color>
+    <color name="card_light_color">#45A249</color>
+    <color name="red">#E92121</color>
+
+</resources>

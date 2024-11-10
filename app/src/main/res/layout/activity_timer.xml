@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TimerActivity"
+    android:padding="16dp"
+    android:background="@color/white">
+
+    <!-- Timer Display -->
+    <TextView
+        android:id="@+id/tvTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="48sp"
+        android:text="00:00:00"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/btnStart"/>
+
+    <!-- Time Limit Input -->
+    <EditText
+        android:id="@+id/etTimeLimit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Set Time Limit (secs)"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/btnStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTimer" />
+
+    <!-- Start Button -->
+    <Button
+        android:id="@+id/btnStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Timer"
+        app:layout_constraintTop_toBottomOf="@id/etTimeLimit"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/custom_color_primary"
+        android:layout_margin="16dp"/>
+
+    <!-- Pause Button -->
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pause"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/custom_color_primary"
+        app:layout_constraintTop_toBottomOf="@id/etTimeLimit"
+        app:layout_constraintStart_toEndOf="@id/btnStart"
+        android:layout_margin="16dp"/>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/custom_color_primary"
+        app:layout_constraintTop_toBottomOf="@id/etTimeLimit"
+        app:layout_constraintStart_toEndOf="@id/btnPause"
+        android:layout_margin="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="359dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnPause"
+        app:layout_constraintVertical_bias="0.143">
+
+        <Button
+            android:id="@+id/btnTaskRun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/run"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:backgroundTint="@color/custom_color_primary"/>
+
+        <Button
+            android:id="@+id/btnTaskCycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cycle"
+            android:textSize="16dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:backgroundTint="@color/custom_color_primary"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="397dp"
+        android:layout_height="79dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bottom_background"
+        android:elevation="2dp"
+        app:itemIconSize="30dp"
+        app:itemIconTint="@drawable/item_selector"
+        app:itemRippleColor="@android:color/transparent"
+        app:itemTextColor="@drawable/text_color_selector"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_menu" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

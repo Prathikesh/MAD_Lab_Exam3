@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">FitSync</string>
+    <string name="task_name">Task Name</string>
+    <string name="save">Save</string>
+    <string name="home_bottom">Home</string>
+    <string name="task_bottom">Task</string>
+    <string name="timer_bottom">Timer</string>
+    <string name="reminder_bottom">Reminder</string>
+    <string name="lost_weight">You have Completed all your Tasks Yesterday, Keep it Up!</string>
+    <string name="progress_bar">Progress Bar</string>
+    <string name="monthly_progress">Your Monthly Progress</string>
+    <string name="empower_your_fitness_evolution">Empower Your Fitness Evolution</string>
+    <string name="app_logo">App Logo</string>
+    <string name="motivation_quote">Every rep, every set, brings you closer to your best self. Keep pushing, keep believing.</string>
+    <string name="run">Run for 2 mins</string>
+    <string name="cycle">Cycle for 5 mins</string>
+    <string name="swimming">Swimming</string>
+    <string name="_10000_m">10000 m</string>
+    <string name="morning_run">Morning Run</string>
+    <string name="_50000_m">50000 m</string>
+    <string name="evening_cycle">Evening Cycle</string>
+    <string name="_8_00_pm">8.00 PM</string>
+    <string name="clock">Clock</string>
+    <string name="yoga">Yoga</string>
+    <string name="_6_00_pm">6.00 PM</string>
+    <string name="calender">Calender</string>
+    <string name="_6_00_am">6.00 AM</string>
+    <string name="current_time_">Current Time: 00:00:00</string>
+    <string name="enter_your_task">Enter your task</string>
+    <string name="upcoming_activities">Upcoming Activities</string>
+    <string name="due_date">Due Date</string>
+</resources>
